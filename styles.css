@@ -1,0 +1,41 @@
+/*
+label {
+    margin: 0.5rem 0;
+}
+*/
+input {
+    /*display: block;*/
+    /*width: 100%;*/
+    text-align: "left";
+}
+
+.p-input-description {
+    margin: 10px 0px 0px 0px;
+}
+
+.full-line-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: auto;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+}
+
+html {
+    color: #F0F0F0;
+    background-color: #d293dd;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 10px;
+    margin: 5vh 100px;
+    color: #FFFFFF;
+    background-color: #002288;
+}

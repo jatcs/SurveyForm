@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Remember to import the styles -->
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <!-- TODO: look up how to set an image as the background for page -->
+  </head>
+  <main>
+    <!-- [X] Step 1 -->
+    <h1 id="title" style="text-align:center">My Survey Form</h1>
+    <!-- [X] Step 2 -->
+    <p id="description" style="text-align:center">
+      <i>Thank you for taking the time to fill out our survey!</i>
+    </p>
+    <!-- [X] Step 3 -->
+    <form id="survey-form">
+      <fieldset>
+        <!-- [X] Step 10 - set label id's -->
+        <!-- [X] Step 11 - placeholder texts -->
+        <!-- [X] Step 4 -->
+        <label for="name" id="name-label">
+          Enter your name:
+          <input id="name" name="name" 
+          type="text" class="full-line-input" required
+          placeholder="i.e. John Doe">
+        </label>
+        <!-- [X] Step 5 -->
+        <!-- What is an HTML5 validation error for step6? 
+        Is there a way to catch that on the server side? -->
+        <label for="email" id="email-label">
+          Enter your email:
+          <input id="email" name="email" 
+          type="email" class="full-line-input" required
+          placeholder="i.e. john@outlook.com">
+        </label>
+         <!-- [X] Step 7+8+9 -->
+        <label for="number" id="number-label">
+          Enter your number <em>with no dashes</em> (optional):
+          <input id="number" name="number"
+          type="number" min="1000000000" max="9999999999"
+          class="full-line-input"
+          placeholder="i.e. 123456789">
+        </label>
+        <!-- [X] Step 12 -->
+        <label for="dropdown">
+          Would you refer us to a friend?
+          <select id="dropdown">
+            <option disabled selected>None Selected</option>
+            <option>Very Likely!</option>
+            <option>Somewhat likely</option>
+            <option>Indifferent</option>
+            <option>Somewhat unlikely</option>
+            <option>Terribly unlikely</option>
+          </select>
+        </label>
+        <!-- Step 13: create a radio selection -->
+        <p class="p-input-description">
+          What was your favorite feature?
+        </p>
+        <label for="lovedColor">
+          <input id="lovedColor" type="radio" 
+          name="favoriteFeature" value="color">
+          The color scheme
+        </label>
+        <label for="lovedLayout">
+          <input id="lovedLayout" type="radio" 
+          name="favoriteFeature" value="layout">
+          The layout
+        </label>
+        <label for="lovedEverything">
+          <input id="lovedEverything" type="radio" 
+          name="favoriteFeature" value="everything">
+          Everything!
+        </label>
+        <!-- Step 14: checkboxes -->
+        <p class="p-input-description">What would you like us to improve?</p>
+        <label for="increaseProjects">
+          <input id="increaseProjects" type="checkbox" 
+          name="suggestedImprovements" 
+          value="increaseProjects">
+          More available projects
+        </label>
+        <label for="engagingTutorials">
+          <input id="engagingTutorials" type="checkbox" 
+          name="suggestedImprovements" 
+          value="engagingTutorials">
+          More engaging tutorials
+        </label>
+        <label for="feedbackForm">
+          <input id="feedbackForm" type="checkbox" 
+          name="suggestedImprovements" value="feedbackForm">
+          This feedback form
+        </label>
+        <!-- Step 15: Additional comments-->
+        <p class="p-input-description">
+          Enter additional comments below. (optional)
+        </p>
+        <textarea></textarea>
+        <!-- Step 16 Submit the inputs!
+        Note: they didn't ask us to put it to some backend.
+        i.e. using `action` in the field
+        -->
+        
+        <input id="submit" type="submit" value="Press to submit!" style="background-color:green; color: white; padding: 8px">
+     </fieldset>
+    </form>
+  </main>
+</html>
